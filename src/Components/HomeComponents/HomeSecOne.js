@@ -33,7 +33,7 @@ const Container = styled.div`
 	height: 30vh;
 	display: flex;
 	justify-content: space-between;
-	margin: 7%;
+	margin: 6% 7%;
 	align-items: center;
 `;
 
