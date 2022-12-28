@@ -1,25 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import ContactSecOne from "../Components/ContactComp/ContactSecOne";
 import Navbar from "../Components/Navbar";
 
 const Contact = () => {
 	return (
-		<Container>
-			<Navbar />
-			<Text>Contact</Text>
-		</Container>
+		
+			<Container>
+				<Navbar />
+				<ContactSecOne />
+			</Container>
+		
 	);
 };
 
 export default Contact;
 
 const Container = styled.div`
-	flex: 1;
-	justify-content: center;
-	align-items: center;
-`;
-const Text = styled.h1`
-	position: absolute;
-	top: 50vh;
-	left: 50vw;
+	width: 100%;
+	height: 100%;
 `;

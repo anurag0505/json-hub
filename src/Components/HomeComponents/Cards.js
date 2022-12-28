@@ -1,7 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { HiEyeSlash, FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import { useNavigate } from "react-router-dom";
+import {
+	AiOutlineFileSearch,
+	AiOutlineFieldString,
+	AiOutlineBars,
+	AiOutlineEye,
+	AiOutlineLeftSquare,
+	AiOutlineSolution,
+	AiOutlineScissor,
+	AiOutlineProfile,
+} from "react-icons/ai";
+
 const Cards = () => {
 	let navigate = useNavigate();
 	return (
@@ -13,10 +23,10 @@ const Cards = () => {
 					}}
 				>
 					<Icon>
-						<FaBeer size={56} color="tomato" />
+						<AiOutlineSolution size={50} color="tomato" />
 					</Icon>
 					<Title>JSON Validator</Title>
-					<Subtitle>view all your json code here</Subtitle>
+					<Subtitle>Validate all your JSON code here</Subtitle>
 				</Items>
 
 				<Items
@@ -25,10 +35,10 @@ const Cards = () => {
 					}}
 				>
 					<Icon>
-						<FaBeer size={56} color="tomato" />
+						<AiOutlineEye size={50} color="tomato" />
 					</Icon>
 					<Title>JSON Viewer</Title>
-					<Subtitle>view all your json code here</Subtitle>
+					<Subtitle>View all your JSON code</Subtitle>
 				</Items>
 
 				<Items
@@ -37,10 +47,10 @@ const Cards = () => {
 					}}
 				>
 					<Icon>
-						<FaBeer size={56} color="tomato" />
+						<AiOutlineProfile size={50} color="tomato" />
 					</Icon>
 					<Title>JSON Formatter</Title>
-					<Subtitle>view all your json code here</Subtitle>
+					<Subtitle>Format the Codes at a click</Subtitle>
 				</Items>
 
 				<Items
@@ -49,10 +59,10 @@ const Cards = () => {
 					}}
 				>
 					<Icon>
-						<FaBeer size={56} color="tomato" />
+						<AiOutlineScissor size={50} color="tomato" />
 					</Icon>
 					<Title>JSON Editor</Title>
-					<Subtitle>view all your json code here</Subtitle>
+					<Subtitle>Editing The JSON now made simple</Subtitle>
 				</Items>
 				<Items
 					onClick={() => {
@@ -60,10 +70,10 @@ const Cards = () => {
 					}}
 				>
 					<Icon>
-						<FaBeer size={56} color="tomato" />
+						<AiOutlineLeftSquare size={50} color="tomato" />
 					</Icon>
 					<Title>JSON Beautifier</Title>
-					<Subtitle>view all your json code here</Subtitle>
+					<Subtitle> Your JSON should look Beautiful</Subtitle>
 				</Items>
 				<Items
 					onClick={() => {
@@ -71,10 +81,10 @@ const Cards = () => {
 					}}
 				>
 					<Icon>
-						<FaBeer size={56} color="tomato" />
+						<AiOutlineFieldString size={50} color="tomato" />
 					</Icon>
 					<Title>String to JSON </Title>
-					<Subtitle>view all your json code here</Subtitle>
+					<Subtitle>Convert string to JSON</Subtitle>
 				</Items>
 
 				<Items
@@ -83,10 +93,10 @@ const Cards = () => {
 					}}
 				>
 					<Icon>
-						<FaBeer size={56} color="tomato" />
+						<AiOutlineFileSearch size={50} color="tomato" />
 					</Icon>
 					<Title>JSON Checker</Title>
-					<Subtitle>view all your json code here</Subtitle>
+					<Subtitle>You always Need to check Your JSON</Subtitle>
 				</Items>
 
 				<Items
@@ -95,24 +105,10 @@ const Cards = () => {
 					}}
 				>
 					<Icon>
-						<FaBeer size={56} color="tomato" />
+						<AiOutlineBars size={50} color="tomato" />
 					</Icon>
 					<Title>JSON Parser</Title>
-					<Subtitle>view all your json code here</Subtitle>
-				</Items>
-				<Items>
-					<Icon>
-						<FaBeer size={56} color="tomato" />
-					</Icon>
-					<Title>JSON to XML</Title>
-					<Subtitle>view all your json code here</Subtitle>
-				</Items>
-				<Items>
-					<Icon>
-						<FaBeer size={56} color="tomato" />
-					</Icon>
-					<Title>JSON to CSV</Title>
-					<Subtitle>view all your json code here</Subtitle>
+					<Subtitle>Data to Object? use Parser</Subtitle>
 				</Items>
 			</Wrapper>
 		</Container>

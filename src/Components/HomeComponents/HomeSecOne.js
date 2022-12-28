@@ -25,9 +25,6 @@ const HomeSecOne = () => {
 export default HomeSecOne;
 
 const Container = styled.div`
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
 	margin-top: 100px;
 	width: 100vw;
 	height: 30vh;
