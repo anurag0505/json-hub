@@ -25,7 +25,6 @@ const HomeSecOne = () => {
 export default HomeSecOne;
 
 const Container = styled.div`
-	margin-top: 100px;
 	width: 100vw;
 	height: 30vh;
 	display: flex;

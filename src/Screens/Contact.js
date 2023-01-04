@@ -5,18 +5,18 @@ import Navbar from "../Components/Navbar";
 
 const Contact = () => {
 	return (
-		
-			<Container>
-				<Navbar />
-				<ContactSecOne />
-			</Container>
-		
+		<Container>
+			<Navbar />
+			<ContactSecOne />
+		</Container>
 	);
 };
 
 export default Contact;
 
 const Container = styled.div`
-	width: 100%;
-	height: 100%;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	flex-direction: column;
 `;
