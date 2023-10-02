@@ -17,7 +17,7 @@ const ContactSecOne = () => {
 						<Email type="email" placeholder="Enter Email" />
 						<Button>submit</Button>
 					</Wrapper>
-					<Message />
+					<Message placeholder="Enter Message" />
 				</Right>
 			</Container>
 		</>
@@ -97,6 +97,9 @@ const Message = styled.textarea`
 	margin-top: 35px;
 	margin-left: 50px;
 	background-color: white;
+	font-size: 17px;
+	padding: 5px 10px;
+	
 `;
 
 const ContactPic = styled.img`
@@ -116,8 +119,8 @@ const Button = styled.button`
 	border-radius: 12px;
 	padding: 12px 24px;
 	:hover {
-		background-color: gray;
-		color: snow;
+		background-color: white;
+		color: darkblue;
 	}
 	max-width: 100px;
 `;

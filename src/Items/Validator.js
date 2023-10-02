@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { useState } from "react";
 
 const Validator = () => {
+	const [inputText, setInputText] = useState("");
+
+	 const handleChange = (e) => {
+		setInputText({ [e.target.inputText]: e.target.value });
+	};
 	return (
 		<Container>
 			<Wrapper>
@@ -13,10 +19,15 @@ const Validator = () => {
 				</Subtitle>
 			</Wrapper>
 
-			<InputBox type="textarea" placeholder="Enter Text Here" />
+			<InputBox
+				type="textarea"
+				placeholder="Enter Text Here"
+				value={inputText}
+				onChange={handleChange}
+			/>
 			<Wrapper2>
 				<Button>Validate</Button>
-				<Button>Clear</Button>
+				<Button onClick={() => {}}>Clear</Button>
 			</Wrapper2>
 			<ResultArea type="textarea" placeholder="Result" />
 		</Container>
